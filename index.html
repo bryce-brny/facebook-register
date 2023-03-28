@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+        html{
+            font-family: Helvetica, Arial;
+        }
+        .body{
+            background-color: rgb(240, 241, 244);
+            display: flex;
+            /* align-items: center; */
+        }
+
+
+
+        .logoandtext{
+            width: 50%;
+        }
+
+        /* div of image */
+        .logo{
+           /* margin-inline: auto; */
+           margin-top: 150px;
+           padding-left: 150px;
+           width: 50%;
+        }
+
+        /* img FB */
+        .fb_logo{
+            display: block;
+            margin: auto;
+            margin-bottom: -10px;
+            /* text-align: flex-start; */
+            background-color: rgb(240, 241, 244);
+        }
+        .fb_text{
+            font-size: 20px;
+            height: 100px;
+            text-align: flex-start;
+            margin-inline: auto;
+            margin-left: 180px;
+        }
+
+
+
+
+
+        .login{
+            width: 50%;
+            padding-left: 100px;
+            background-color: rgb(240, 241, 244);
+            transform: translate(0,0px);
+            height: 100vh;
+            overflow:hidden;
+        }
+        .form{
+            margin-top: 150px;
+            margin-bottom: 24px;
+            width: 390px;
+            border: 1px solid white;
+            border-radius: 10px;
+            text-align: center;
+            height: 350px;
+            background-color: white;
+            padding-top: 15px;
+            box-shadow: 0px 0px 4px 0px rgba(125, 121, 121, 0.503);
+        }
+        #Username, #Password, #submit{
+            margin: auto;
+            margin-bottom: 16px;
+            display: block;
+            width: 95%;
+            height: 50px;
+            border: 1px solid rgba(192, 192, 192, 0.455);
+            border-radius: 10px;
+            padding-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            color: white;
+        }
+
+        ::placeholder {
+            color: rgb(141, 141, 141);
+            opacity: 1;
+        }
+        #submit{
+            font-size: 20px;
+            background-color: rgba(6, 82, 246, 0.757);
+        }
+        .linkforgotpassword{
+            display: block;
+            color: rgb(33, 91, 235);
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
+        hr{
+            display: inline-block;
+            width: 90%;
+            text-align: center;
+            border-color: rgba(255, 255, 255, 0.362);
+        }
+
+        /* how to select input type */
+        .newaccbutton{
+            color: white;
+            width: 50%;
+            height: 45px;
+            margin-top: 24px;
+            border: 0px;
+            border-radius: 5px;
+            background-color: rgb(22, 178, 48);
+        }
+        .createapage{
+            /* text-align: center; */
+            margin-top: 40px;
+        }
+        .create{
+            color: black;;
+            text-decoration: none;
+            font-size: 13px;
+            text-align: center;
+        }
+        .footer{
+            padding-top: 30px;
+            display: block;
+            height: 200px;
+
+        }
+
+        .language1{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 4px;
+            flex-wrap: wrap;
+            list-style-type: none;
+            font-size: 14px;
+            color: gray;
+        }
+        
+        .function1 {
+            margin-top: 8px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            list-style-type: none;
+            
+        }
+        .footer{
+            width: 70%;
+            height: 140px;
+            margin: auto;
+        }
+
+        li > a{
+            text-decoration: none;
+            color: gray;
+            font-size: 14px;
+        }
+        .alltext{
+            text-align: center;
+        }
+
+        @media (max-width: 844px) {
+            .body{
+                /* display: flex; */
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+            }    
+
+            .login{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 0px;
+            overflow: visible;
+            justify-content: space-around;
+            }
+            .form{
+                margin-top: -300px;
+            }
+
+            .logoandtext{
+                /* text-align: center; */
+                width: 338.5px;
+                justify-content: space-around;
+                /* display: flex; */
+            /* flex-direction: row; */
+                /* justify-content: center; */
+                /* text-align: center; */
+            }
+            .logo{
+           /* margin-inline: auto; */
+           margin-top: 150px;
+           padding-left: 0px;
+           width: 50%;
+            }
+            .fb_logo{
+            display: block;
+            margin: auto;
+            margin-bottom: 0;
+            /* text-align: flex-start; */
+            background-color: rgb(240, 241, 244);
+            }
+            .fb_text{
+            font-size: 20px;
+            height: 100px;
+            text-align: flex-start;
+            margin-inline: auto;
+            margin-left: 0px;
+            }
+
+
+        }
+        
+
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="body">
+
+        <div class="logoandtext">
+
+            <div class="logo">
+                <img class="fb_logo" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook" width="300px">
+            </div>
+            <p class="fb_text">Facebook helps you connect and share with the people in your life.</p>
+
+        </div>
+
+
+
+        <div class="login">
+            <div class="form">
+                <form action="#">
+                    <input class="placeholdercolor" type="text" id="Username" name="Username" value="" placeholder="Email address or phone number">
+                    <input class="placeholdercolor" type="password" id="Password" name="Password" value="" placeholder="Password">
+                    <input type="submit" id="submit" value="Log in">
+
+                    <a class="linkforgotpassword" href="#">Forgotten password?</a>
+
+                    <hr>
+
+                    <input class="newaccbutton" type="button" value="Create new account">
+                </form>
+                <div class="createapage">
+                    <a class="create" href="#"><b>Create a Page</b></a> <span class="create">for a celebrity, brand or business.</span>
+                </div>
+            </div>
+
+            <!-- <div class="createapage">
+                <a class="create" href="#"><b>Create a Page</b></a> <span class="create">for a celebrity, brand or business.</span>
+            </div> -->
+        </div>
+
+
+
+
+    </div>
+
+    <div class="footer">
+
+        <div class="alltext">
+
+            <div class="language">
+                <ul class="language1">
+                            <li>English</li>
+                            <li>ภาษาไทย</li>
+                            <li>日本語</li>
+                            <li>中文(简体)</li>
+                            <li>Tiếng Việt</li>
+                            <li>Français (France)</li>
+                            <li>Deutsch</li>
+                            <li>Русский</li>
+                            <li>Español</li>
+                            <li>Português (Brasil)</li>
+                            <li>Italiano</li>
+                </ul>
+            </div>
+
+            <hr class="foothr">
+
+            <div class="function">
+                <ul class="function1">
+                    <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+                    <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+                    <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+                    <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+                    <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+                    <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+                    <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+                    <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+                    <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+                    <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+                    <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
